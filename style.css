@@ -34,6 +34,7 @@ body{
 
 .logo-nav{
     width:50px;
+    margin-left: 10px;
 }
 
 .brand{
@@ -47,6 +48,7 @@ body{
 
 .hamburger{
     color:white;
+    transform: translateX(1200px);
     font-size:34px;
     cursor:pointer;
     user-select:none;
