@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MUGEN Gym</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+
+    <img src="Mugen-logo-white-removebg-.png" alt="Logo" class="logo-nav">
+
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <div class="nav-links" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#programs">Programs</a>
+        <a href="index.html#coaches">Coaches</a>
+        <a href="index.html#schedule">Schedule</a>
+        <a href="index.html#gallery">Gallery</a>
+    </div>
+
+</nav>
+<section id="contact" class="section dark">
+  <h2>Contact Us</h2>
+
+  <p class="contact-text">For pricing & registration contact coaches directly</p>
+
+  <div class="contact-grid">
+
+    <div class="contact-card">
+      <h3>Coach Mhammad</h3>
+      <p>+961 70 480 942</p>
+
+      <a class="btn wa" href="https://wa.me/96170480942">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+
+      <a class="btn ig" href="https://instagram.com/mighty_calis">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <h3>Coach Leen</h3>
+      <p>+961 76 811 754</p>
+
+      <a class="btn wa" href="https://wa.me/96176811754">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+
+      <a class="btn ig" href="https://instagram.com/leenalmohtar">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
+    </div>
+
+    <div class="contact-card mugan-card">
+        <h3>MUGAN Official</h3>
+
+        <p>Follow us for class updates, athlete achievements, events, and community content.</p>
+
+        <a class="btn ig" href="https://instagram.com/mugen_gym" target="_blank">
+            <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+    </div>
+
+</div>
+
+  </div>
+</section>
+<script>
+
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
+
+document.addEventListener("click", function(event) {
+
+    const menu = document.getElementById("navMenu");
+    const hamburger = document.querySelector(".hamburger");
+
+    // If the click is NOT inside the menu or on the hamburger
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+        menu.classList.remove("active");
+    }
+
+});
+
+</script>
+</body>
+</html>
